@@ -1,13 +1,8 @@
-import webbrowser
+import streamlit as st
 
-f = open('Treinamento 175.html','w')
+# Lê o HTML local
+with open("Treinamento 175.html", "r", encoding="utf-8") as f:
+    html = f.read()
 
-message = """<html>
-<head></head>
-<body><p>Olá mundo!</p></body>
-</html>"""
-
-f.write(message)
-f.close()
-
-webbrowser.open_new_tab('helloworld.html')
+# Exibe o HTML inteiro
+st.components.v1.html(html, height=800, scrolling=True)
