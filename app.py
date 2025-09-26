@@ -1,6 +1,6 @@
 import webbrowser
 
-f = open('treinamento175.html','w')
+f = open('Treinamento 175.html','w')
 
 message = """<html>
 <head></head>
